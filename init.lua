@@ -109,9 +109,8 @@ vim.opt.rtp:prepend(lazypath)
 
 -- NOTE: Here is where you install your plugins.
 
-require('lazy').setup({
-{ 
-    -- You can easily change to a different colorscheme.
+require('lazy').setup {
+  { -- You can easily change to a different colorscheme.
     'folke/tokyonight.nvim',
     priority = 1000, -- Make sure to load this before all the other start plugins.
     init = function()
@@ -123,5 +122,13 @@ require('lazy').setup({
       -- You can configure highlights by doing something like:
       vim.cmd.hi 'Comment gui=none'
     end,
-  }
-})
+  },
+
+  require 'plugins.init',
+  require 'plugins.other',
+  require 'plugins.conform',
+  require 'plugins.lint',
+  require 'plugins.neo-tree',
+  require 'plugins.gitsigns',
+  require 'plugins.terminal',
+}
