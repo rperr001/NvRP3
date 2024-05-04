@@ -99,6 +99,7 @@ require('lazy').setup {
     end,
   },
 
+  require 'plugins.starter',
   require 'plugins.lspconfig',
   require 'plugins.cmp',
   require 'plugins.conform',
