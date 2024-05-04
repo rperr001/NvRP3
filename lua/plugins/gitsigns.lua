@@ -1,12 +1,8 @@
--- Adds git related signs to the gutter, as well as utilities for managing changes
--- NOTE: gitsigns is already included in init.lua but contains only the base
--- config. This will add also the recommended keymaps.
-
 return {
   {
     'lewis6991/gitsigns.nvim',
     opts = {
-	    signs = {
+      signs = {
         add = { text = '+' },
         change = { text = '~' },
         delete = { text = '_' },
@@ -39,7 +35,6 @@ return {
           end
         end, { desc = 'Jump to previous git [c]hange' })
 
-        -- Actions
         -- visual mode
         map('v', '<leader>Hs', function()
           gitsigns.stage_hunk { vim.fn.line '.', vim.fn.line 'v' }
