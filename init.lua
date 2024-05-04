@@ -99,11 +99,14 @@ require('lazy').setup {
     end,
   },
 
-  require 'plugins.init',
+  require 'plugins.lspconfig',
+  require 'plugins.cmp',
   require 'plugins.conform',
+  require 'plugins.treesitter',
   require 'plugins.neo-tree',
   require 'plugins.terminal',
   require 'plugins.gitsigns',
+  require 'plugins.which-key',
   require 'plugins.autopairs',
   require 'plugins.other',
 
