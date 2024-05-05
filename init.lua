@@ -110,9 +110,9 @@ require('lazy').setup {
   require 'plugins.gitsigns',
   require 'plugins.which-key',
   require 'plugins.autopairs',
+  require 'plugins.debug',
   require 'plugins.other',
 
   -- require 'plugins.indent_line',
   -- require 'plugins.lint',
-  -- require 'plugins.debug',
 }
