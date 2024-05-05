@@ -106,6 +106,7 @@ require('lazy').setup {
   require 'plugins.treesitter',
   require 'plugins.neo-tree',
   require 'plugins.terminal',
+  require 'plugins.toggleterm',
   require 'plugins.gitsigns',
   require 'plugins.which-key',
   require 'plugins.autopairs',
