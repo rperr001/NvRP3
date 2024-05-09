@@ -35,4 +35,11 @@ return {
     opts = {},
     keys = { { '<leader>gd', '<cmd>DiffviewOpen<cr>', desc = 'DiffView' } },
   },
+  {
+    'yanskun/gotests.nvim',
+    ft = 'go',
+    config = function()
+      require('gotests').setup()
+    end,
+  },
 }
