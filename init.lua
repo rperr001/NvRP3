@@ -10,7 +10,7 @@ require 'configs.install-lazy'
 
 -- NOTE: Prerequisite
 -- brew install make gcc ripgrep fd unzip git neovim
--- brew install gofumpt golines gopls golangci-lint
+-- brew install gofumpt golines gopls golangci-lint gotests
 -- brew install pyright black isort
 -- brew tap homebrew/cask-fonts && brew install --cask font-jetbrains-mono-nerd-font
 
@@ -30,6 +30,7 @@ require('lazy').setup {
   require 'plugins.autopairs',
   require 'plugins.debug',
   require 'plugins.tools',
+  require 'plugins.noice',
 
   -- require 'plugins.indent_line',
   -- require 'plugins.lint',
