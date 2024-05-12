@@ -1,7 +1,6 @@
 return {
   { 'elzr/vim-json', ft = 'json' },
-  { 'glench/vim-jinja2-syntax', ft = 'jinja2' },
-  { 'saltstack/salt-vim', ft = 'sls' },
+  { 'saltstack/salt-vim', ft = 'sls,jinja2' },
   { 'carbon-language/vim-carbon-lang', ft = 'carbon' },
   { 'tpope/vim-sleuth' }, -- Detect tabstop and shiftwidth automatically
 
