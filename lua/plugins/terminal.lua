@@ -31,9 +31,15 @@ return {
       vim.keymap.set('n', '<leader>h', function()
         require('nvterm.terminal').new 'horizontal'
       end, { desc = 'horizontal terminal' })
+      vim.keymap.set('n', '<leader>xh', function()
+        require('nvterm.terminal').toggle 'horizontal'
+      end, { desc = 'toggle/exit horizontal terminal' })
       vim.keymap.set('n', '<leader>v', function()
         require('nvterm.terminal').new 'vertical'
       end, { desc = 'vertical terminal' })
+      vim.keymap.set('n', '<leader>xv', function()
+        require('nvterm.terminal').toggle 'vertical'
+      end, { desc = 'toggle/exit vertical terminal' })
     end,
   },
 }

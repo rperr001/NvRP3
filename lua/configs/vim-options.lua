@@ -38,3 +38,5 @@ vim.opt.scrolloff = 10
 -- [[ Basic Keymaps ]]
 -- Set highlight on search, but clear on pressing <Esc> in normal mode
 vim.opt.hlsearch = true
+-- Interactive feedback when creating/typing substitute command
+vim.opt.inccommand = 'split'

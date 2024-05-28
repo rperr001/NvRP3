@@ -125,6 +125,7 @@ return {
 
       local ensure_installed = vim.tbl_keys(servers or {})
       vim.list_extend(ensure_installed, {
+        'bashls', -- My Plugins
         'golines', -- My Plugins
         'gofumpt', -- My Plugins
         'goimports', -- My Plugins
